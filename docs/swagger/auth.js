@@ -121,10 +121,7 @@
  *                 example: secret123
  *     responses:
  *       200:
- *         description: Login successful. Sets httpOnly cookies for browser clients.
-  Also returns accessToken in response body for use with Swagger UI 
-  or non-browser clients. Click the Authorize button at the top of 
-  the docs and paste the token to authenticate subsequent requests.
+ *         description: Login successful. Sets httpOnly cookies for browser clients.  Also returns accessToken in response body for use with Swagger UI   or non-browser clients. Click the Authorize button at the top of   the docs and paste the token to authenticate subsequent requests.
  *         content:
  *           application/json:
  *             schema:
@@ -146,31 +143,6 @@
  *         description: Missing email or password
  *       401:
  *         description: Invalid credentials or email not verified
- */
-
-/**
- * @swagger
- * /api/v1/auth/refresh-token:
- *   get:
- *     summary: Get a new access token using the refresh token cookie
- *     tags: [Auth]
- *     security: []
- *     responses:
- *       200:
- *         description: New access token set as cookie
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 success:
- *                   type: boolean
- *                   example: true
- *                 msg:
- *                   type: string
- *                   example: Access token refreshed
- *       401:
- *         description: No or invalid refresh token
  */
 
 /**
