@@ -2,7 +2,7 @@ require("dotenv").config();
 const app = require("./app");
 const connectDB = require("./db/connect");
 
-const autoCleanTrash = require("./cronjobs");
+const autoCleanTrash = require("./cronJobs");
 
 const port = process.env.PORT || 5000;
 const start = async () => {
