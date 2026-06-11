@@ -121,7 +121,11 @@
  *                 example: secret123
  *     responses:
  *       200:
- *         description: Login successful. Sets httpOnly cookies for browser clients.  Also returns accessToken in response body for use with Swagger UI   or non-browser clients. Click the Authorize button at the top of   the docs and paste the token to authenticate subsequent requests.
+ *         description: |
+  Login successful. Sets httpOnly cookies for browser clients.
+  Also returns accessToken in response body for Swagger UI and non-browser clients.
+  To authenticate in Swagger UI, copy the accessToken from the response and paste it
+  using the Authorize button at the top of the page.
  *         content:
  *           application/json:
  *             schema:
